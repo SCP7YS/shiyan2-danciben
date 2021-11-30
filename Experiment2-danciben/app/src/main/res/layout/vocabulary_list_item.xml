@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:paddingLeft="30dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="30dp">
+
+    <TextView
+        android:id="@+id/vocabulary_list_item_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sample text"
+        android:textSize="20dp"
+        android:textColor="@color/wordColor">
+    </TextView>
+
+    <TextView
+        android:id="@+id/vocabulary_list_item_meaning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vocabulary_list_item_word"
+        android:layout_marginTop="5dp"
+        android:text="sample text"
+        android:textSize="15dp">
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/vocabulary_list_item_btn_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/baseline_more_vert_black_24"
+        android:background="@android:color/transparent">
+    </ImageButton>
+
+</RelativeLayout>

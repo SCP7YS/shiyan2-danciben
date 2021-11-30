@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#31979595">
+
+    <TextView
+        android:id="@+id/word_addition_dialog_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/word_addition_dialog_dialog_title_add"
+        android:textSize="20sp"></TextView>
+
+    <View
+        android:id="@+id/word_addition_dialog_divider_1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/word_addition_dialog_dialog_title"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/word_addition_dialog_lb_new_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/word_addition_dialog_divider_1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/word_addition_dialog_new_word_lb"
+        android:textSize="18sp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/word_addition_dialog_input_new_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/word_addition_dialog_lb_new_word"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:textSize="18sp">
+    </EditText>
+
+    <TextView
+        android:id="@+id/word_addition_dialog_lb_meaning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/word_addition_dialog_input_new_word"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/word_addition_dialog_meaning_lb"
+        android:textSize="18sp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/word_addition_dialog_input_meaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/word_addition_dialog_lb_meaning"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:textSize="18sp">
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/word_addition_dialog_input_meaning"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginBottom="30dp">
+
+        <Button
+            android:id="@+id/word_addition_dialog_btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/word_addition_dialog_lb_button_ok">
+        </Button>
+
+        <Button
+            android:id="@+id/word_addition_dialog_btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/word_addition_dialog_lb_button_cancel">
+        </Button>
+    </LinearLayout>
+
+
+</RelativeLayout>
